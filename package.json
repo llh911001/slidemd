@@ -1,0 +1,71 @@
+{
+  "name": "slidemd",
+  "version": "1.0.0",
+  "description": "A fast and lightweight CLI tool to present your Markdown.",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf types lib es dist",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "type-check": "tsc --noEmit",
+    "build": "npm run lint && tsc",
+    "lint": "eslint src --ext ts"
+  },
+  "bin": {
+    "slidemd": "./lib/cli.js"
+  },
+  "main": "./lib/index.js",
+  "types": "./types/index.d.ts",
+  "keywords": [
+    "presentation",
+    "slide",
+    "keynote",
+    "powerpoint",
+    "reveal",
+    "markdown",
+    "slidemd"
+  ],
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:llh911001/slidemd.git"
+  },
+  "dependencies": {
+    "commander": "^6.2.1",
+    "express": "^4.17.1",
+    "open": "^7.3.1",
+    "reveal.js": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.11",
+    "@typescript-eslint/eslint-plugin": "^4.12.0",
+    "@typescript-eslint/parser": "^4.12.0",
+    "eslint": "^7.17.0",
+    "husky": "^4.3.8",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.1.3"
+  },
+  "files": [
+    "lib",
+    "types",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "eslint --ext .ts",
+      "prettier --write"
+    ]
+  },
+  "license": "MIT"
+}
