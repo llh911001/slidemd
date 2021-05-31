@@ -1,6 +1,8 @@
-# Slidemd
+<h1 align="center">Slidemd</h1>
 
-A fast and lightweight CLI tool to present your Markdown. (Powered by [reveal.js](https://revealjs.com/) and [express.js](https://expressjs.com/))
+<p align="center">A fast and lightweight CLI tool to present your Markdown. (Powered by <a href="https://revealjs.com/">reveal.js</a> and <a href="https://expressjs.com/">express.js</a>)</p>
+
+<p align="center"><img src="./demonstration.gif"/></p>
 
 ## Why?
 
@@ -128,7 +130,7 @@ The default values are:
 
 ## NodeJS API
 
-Slidemd also exposes a NodeJS API to present your Markdown.
+Slidemd also exposes a NodeJS API.
 
 ```typescript
 import slidemd from 'slidemd';
