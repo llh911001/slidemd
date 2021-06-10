@@ -1,8 +1,14 @@
 <h1 align="center">Slidemd</h1>
 
+<p align="center">
+<a href="https://www.npmjs.com/package/slidemd"><img src="https://img.shields.io/npm/v/slidemd?style=flat-square"/></a>
+<img src="https://img.shields.io/github/languages/code-size/llh911001/slidemd?color=success&style=flat-square"/>
+<img src="https://img.shields.io/npm/dm/slidemd?style=flat-square"/>
+<img src="https://img.shields.io/npm/l/slidemd?style=flat-square"/>
+</p>
 <p align="center">A fast and lightweight CLI tool to present your Markdown. (Powered by <a href="https://revealjs.com/">reveal.js</a> and <a href="https://expressjs.com/">express.js</a>)</p>
 
-<p align="center"><img src="./demonstration.gif"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/llh911001/slidemd/master/demonstration.gif"/></p>
 
 ## Why?
 
