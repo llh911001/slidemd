@@ -124,7 +124,7 @@ The default values are:
 - `data-separator` - `^\r?\n---\r?\n$`
 - `data-separator-vertical` - `^\r?\n--\r?\n$`
 
-> To customize, see `--options` for more details.
+> To customize, see `--optionsFile` for more details.
 
 ### Speaker notes
 
@@ -132,7 +132,7 @@ The default values are:
 
 - `data-separator-notes` - `^notes?:`
 
-> To customize, see `--options` for more details.
+> To customize, see `--optionsFile` for more details.
 
 ## NodeJS API
 
