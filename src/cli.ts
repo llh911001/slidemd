@@ -13,14 +13,8 @@ program
   .arguments('<file>')
   .option('-p, --port <port>', 'port number of the local server', '8080')
   .option('-t, --theme <theme>', 'theme of the slides', 'black')
-  .option(
-    '-o, --optionsFile <optionsFile>',
-    'JSON file of reveal.js config and additional options'
-  )
-  .option(
-    '-c, --cssFile <cssFile>',
-    'CSS file of custom styles to a specified theme'
-  )
+  .option('-o, --optionsFile <optionsFile>', 'JSON file of reveal.js config and additional options')
+  .option('-c, --cssFile <cssFile>', 'CSS file of custom styles to a specified theme')
   .parse(process.argv);
 
 const { args } = program;
