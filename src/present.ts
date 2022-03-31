@@ -13,21 +13,13 @@ export interface PresentOptions {
 }
 
 export const present = (
-  {
-    file,
-    cwd = process.cwd(),
-    port,
-    theme,
-    optionsFile,
-    cssFile,
-  }: PresentOptions,
+  { file, cwd = process.cwd(), port, theme, optionsFile, cssFile }: PresentOptions,
   callback?: () => void
 ): void => {
   const app = express();
   const router = express.Router();
 
-  const readFileSync = (p: string) =>
-    fs.readFileSync(path.join(cwd, p), 'utf8');
+  const readFileSync = (p: string) => fs.readFileSync(path.join(cwd, p), 'utf8');
 
   if (!fs.existsSync(path.join(cwd, file))) {
     console.error(`File '${file}' not found!`);
@@ -52,10 +44,7 @@ export const present = (
   });
 
   app.use('/', router);
-  app.use(
-    '/assets',
-    express.static(path.join(__dirname, '../node_modules/reveal.js/'))
-  );
+  app.use(express.static(cwd));
 
   app.listen(Number(port), callback);
 };

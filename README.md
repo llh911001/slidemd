@@ -14,6 +14,8 @@
 
 [reveal.js](https://revealjs.com/) is a fantastic presentation tool with built-in Markdown support (and many other features), only it can be a little hassle to present external Markdown files. After trying out [reveal-md](https://github.com/webpro/reveal-md), which is also great, I personally find it a little heavy.
 
+And most of the time when I present, I'd like to reference some local images in my markdown.
+
 So here comes Slidemd. It's tiny, and fully-featured.
 
 ## Installation
@@ -37,6 +39,32 @@ npx slidemd path/to/your/slides.md
 Then your default browser will automatically open [http://localhost:8080](http://localhost:8080).
 
 Happy presenting!
+
+## Reference local images
+
+Running `slidemd` will also serve the the files within the current working directory, so you can reference images alongside your markdown.
+
+For example, suppose the following directory:
+
+```sh
+$ tree .
+.
+├── my-slides.md
+├── image1.png
+└── image2.png
+```
+
+inside `my-slides.md`, you can reference `image1.png` and `image2.png` like this:
+
+```md
+# My awesome slides
+
+![](image1.png)
+
+---
+
+![](image2.png)
+```
 
 ## CLI options
 

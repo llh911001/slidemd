@@ -1,6 +1,6 @@
 {
   "name": "slidemd",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A fast and lightweight CLI tool to present your Markdown.",
   "scripts": {
     "prepublishOnly": "npm run build",
@@ -39,8 +39,8 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.11",
-    "@typescript-eslint/eslint-plugin": "^4.12.0",
-    "@typescript-eslint/parser": "^4.12.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
     "eslint": "^7.17.0",
     "husky": "^4.3.8",
     "lint-staged": "^10.5.3",
